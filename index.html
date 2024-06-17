@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="ne">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HomePage</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Mukta:wght@400;500;700&display=swap">
+    <link rel="stylesheet" href="style.css">
+    <script src="bundle.js" defer></script>
+</head>
+
+<body>
+    <span class="date" id="date"></span>
+    <form action="https://www.google.com/search" method="get" class="search" onsubmit="return validateForm()">
+        <input class="search-field" id="searchField" type="text" name="q" autocomplete="off" autofocus
+            placeholder="Google Search">
+        <input class="search-button" type="submit" value="Search">
+    </form>
+    <div class="developer-credit">By <a href="https://github.com/2shrestha22" target="_blank">Sangam Shrestha</a>
+    </div>
+    <script>
+        function validateForm() {
+            const input = document.getElementById('searchField');
+            if (input.value.trim() === '') {
+                return false;
+            }
+            return true;
+        }
+    </script>
+</body>
+
+</html>

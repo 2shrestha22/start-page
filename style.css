@@ -1,0 +1,101 @@
+body {
+    font-family: 'Mukta', sans-serif;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    background-color: #1a1a1a;
+    /* Darker background color */
+    justify-content: center;
+    align-items: center;
+    margin: 0;
+    padding: 20px;
+    overflow: hidden;
+    color: #fff;
+    /* Light text color */
+}
+
+.date {
+    padding-bottom: 40px;
+    font-size: 2.5em;
+    color: #fff;
+    /* Light text color */
+    font-weight: 500;
+}
+
+.search {
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0 4px 12px rgba(255, 255, 255, 0.1);
+    /* Lighter shadow for contrast */
+    background-color: #333;
+    /* Darker background color */
+    border-radius: 8px;
+    overflow: hidden;
+    max-width: 500px;
+    width: 100%;
+}
+
+.search-field {
+    font-size: 1em;
+    padding: 14px 24px;
+    margin: 0;
+    border: none;
+    outline: none;
+    flex-grow: 1;
+    border-right: 1px solid #444;
+    /* Darker border color */
+    transition: box-shadow 0.3s ease;
+    background-color: #333;
+    /* Darker background color */
+    color: #fff;
+    /* Light text color */
+}
+
+.search-field:focus {
+    box-shadow: 0 0 8px rgba(66, 133, 244, 0.5);
+}
+
+.search-button {
+    font-size: 1em;
+    background: linear-gradient(135deg, #005aff, #00d4ff);
+    /* Gradient from dark to light blue */
+    color: white;
+    padding: 14px 24px;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+}
+
+.search-button:hover {
+    background: linear-gradient(135deg, #00d4ff, #005aff);
+    /* Reverse gradient on hover */
+    box-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 30px #00d4ff, 0 0 40px #00d4ff;
+    /* Neon blue glow effect on hover */
+}
+
+.search-button:active {
+    background: linear-gradient(135deg, #005aff, #00d4ff);
+    /* Restore original gradient on active */
+    box-shadow: 0 0 10px #00d4ff, 0 0 20px #00d4ff, 0 0 30px #00d4ff, 0 0 40px #00d4ff;
+    /* Neon blue glow effect on active */
+}
+
+.developer-credit {
+    position: fixed;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-family: 'Mukta', sans-serif;
+    font-size: 12px;
+}
+
+.developer-credit a {
+    color: white;
+    text-decoration: none;
+}
+
+.developer-credit a:hover {
+    text-decoration: underline;
+}

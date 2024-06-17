@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "@askbuddie/bikram-sambat": "^1.0.0",
+    "watchify": "^4.0.0"
+  }
+}
